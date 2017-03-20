@@ -42,11 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Network\NeuralLayer.cs" />
+    <Compile Include="Network\NeuralNet.cs" />
+    <Compile Include="Network\Neuron.cs" />
+    <Compile Include="Neurons\INeuralLayer.cs" />
+    <Compile Include="Neurons\INeuralNet.cs" />
+    <Compile Include="Neurons\INeuron.cs" />
+    <Compile Include="Neurons\INeuronReceptor.cs" />
+    <Compile Include="Neurons\INeuronSignal.cs" />
+    <Compile Include="Neurons\NeuralFactor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActivationFunctions\" />
+    <Folder Include="Layers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
